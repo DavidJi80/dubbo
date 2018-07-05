@@ -23,7 +23,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
+        <!--dubbo服务提供者接口-->
         <dependency>
             <groupId>com.github.davidji80.dubbo</groupId>
             <artifactId>dubbo-service-intf</artifactId>
