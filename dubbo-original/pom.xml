@@ -53,9 +53,9 @@
                 <directory>src/main/resources/spring</directory>
                 <filtering>true</filtering>
                 <includes>
-                    <!--<include>application-provider.xml</include>-->
+                    <include>application-provider.xml</include>
                     <!--<include>properties-provider.xml</include>-->
-                    <include>annotation-provider.xml</include>
+                    <!--<include>annotation-provider.xml</include>-->
                 </includes>
             </resource>
         </resources>
