@@ -16,7 +16,7 @@ public class ProviderAnnotation {
 	}
 
 	@Configuration
-	@EnableDubbo(scanBasePackages = "com.github.davidji80.dubbo.service.oimpl")
+	@EnableDubbo(scanBasePackages = "com.github.davidji80.dubbo.annotation.impl")
 	@PropertySource("classpath:/dubbo.properties")
 	static public class ProviderConfiguration {
 		@Bean
