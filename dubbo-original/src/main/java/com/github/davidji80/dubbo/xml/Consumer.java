@@ -9,7 +9,7 @@ public class Consumer {
                 new String[] {"spring/application-consumer.xml"});
         context.start();
         // 获取远程服务代理
-        DemoService demoService = (DemoService)context.getBean("demoService");
+        DemoService demoService = (DemoService)context.getBean("demoService2");
         // 执行远程方法
         String hello = demoService.sayHello("world");
         // 显示调用结果
