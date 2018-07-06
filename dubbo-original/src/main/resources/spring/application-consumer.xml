@@ -14,13 +14,14 @@
     <dubbo:registry address="zookeeper://192.168.1.7:2181"/>
 
     <!-- 生成远程服务代理，可以和本地bean一样使用demoService -->
-    <dubbo:reference id="demoService" interface="com.github.davidji80.dubbo.service.DemoService" />
+    <dubbo:reference id="demoService" interface="com.github.davidji80.dubbo.service.DemoService" loadbalance="leastactive"/>
     <!--关闭某个服务的启动时检查 -->
-    <dubbo:reference id="demoService2" interface="com.github.davidji80.dubbo.service.DemoService" check="false"/>
+    <dubbo:reference id="demoService2" interface="com.github.davidji80.dubbo.service.DemoService"
+                     check="false" />
 
     <!--关闭所有服务的启动时检查-->
     <!--是设置 check 的缺省值，如果配置中有显式的声明，如：<dubbo:reference check="true"/>，不会受影响-->
-    <dubbo:consumer check="false" />
+    <!--<dubbo:consumer check="false" />-->
 
 
 </beans>
